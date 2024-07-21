@@ -2,7 +2,7 @@
 
 namespace JsonDB\dev;
 
-use JsonDB\base\BaseFileWriter;
+use JsonDB\base\Files\BaseFileWriter;
 
 require_once 'BaseFileWork\BaseFileWriter.php';
 
@@ -23,6 +23,8 @@ class FileWriter implements BaseFileWriter
         $jsonData = json_encode($this->arguments);
 
         fwrite($file, $jsonData);
+
+        fclose($file);
     }
 }
 

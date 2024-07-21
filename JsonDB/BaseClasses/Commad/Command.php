@@ -1,6 +1,6 @@
 <?php
 
-namespace JsonDB\base;
+namespace JsonDB\base\Command;
 
 interface Command
 {

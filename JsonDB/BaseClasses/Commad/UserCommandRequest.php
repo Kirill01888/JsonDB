@@ -1,6 +1,6 @@
 <?php
 
-namespace JsonDB\base;
+namespace JsonDB\base\Command;
 
 class UserCommandRequest
 {

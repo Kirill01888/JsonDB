@@ -1,8 +1,8 @@
 <?php
 
-namespace JsonDB\base;
+namespace JsonDB\base\Extractor;
 
-use JsonDB\base\Extractor;
+use JsonDB\base\Extractor\Extractor;
 
 require_once 'extractor.php';
 
@@ -15,7 +15,7 @@ class CommandExtractor implements Extractor
         
     }
 
-    public function extract()
+    public function extract(string $toParce)
     {
         
     }

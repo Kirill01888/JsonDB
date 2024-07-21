@@ -1,8 +1,8 @@
 <?php
 
-namespace JsonDB\base;
+namespace JsonDB\base\ConcreteCommand;
 
-use JsonDB\base\Command;
+use JsonDB\base\Command\Command;
 
 require_once 'Command/Command.php';
 

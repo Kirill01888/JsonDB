@@ -1,8 +1,8 @@
 <?php
 
-namespace JsonDB\base;
+namespace JsonDB\base\Extractor;
 
-use JsonDB\base\Extractor;
+use JsonDB\base\Command\UserCommandRequest;
 
 require_once 'extractor.php';
 
@@ -10,7 +10,7 @@ class UserRequestParcer
 {
     private UserCommandRequest $userCommand;
 
-    private array $result;
+    private array $parced;
 
     function __construct(UserCommandRequest $userCommand)
     {
@@ -19,12 +19,12 @@ class UserRequestParcer
 
     public function parce(Extractor $extractor)
     {
-        $this->result = $extractor->extract($this->userCommand->getCommand());
+        $this->parced = $extractor->extract($this->userCommand->getCommand());
     }
 
     public function getParced()
     {
-        return $this->result;
+        return $this->parced;
     }
 }
 
