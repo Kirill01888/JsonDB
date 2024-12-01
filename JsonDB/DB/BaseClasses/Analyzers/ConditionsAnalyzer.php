@@ -2,7 +2,7 @@
 
 namespace JsonDB\base\Analyzers;
 
-require_once 'Analyzer.php';
+use JsonDB\base\Analyzers\Analyzer;
 
 class ConditionsAnalyzer implements Analyzer
 {

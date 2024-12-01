@@ -3,14 +3,11 @@
 namespace JsonDB\base\Extractor;
 
 use JsonDb\base\Exeptions\ExtractionError;
-use JsonDB\base\Extractor\Extractor;
-
-require_once 'Extractor.php';
-require_once '../Exeptions/ExtractionError.php';
+use JsonDB\base\Extractor\IExtractor;
 
 define('COUNT_OF_PARENTHESIS', 2);
 
-class ColumnsExtractor implements Extractor
+class ColumnsExtractor implements IExtractor
 {
     public function extract(string $toParce)
     {

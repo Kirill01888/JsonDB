@@ -2,11 +2,9 @@
 
 namespace JsonDB\base\Extractor;
 
-use JsonDB\base\Extractor\Extractor;
+use JsonDB\base\Extractor\IExtractor;
 
-require_once 'extractor.php';
-
-class CommandExtractor implements Extractor
+class CommandExtractor implements IExtractor
 {
     private string $userCommand;
 

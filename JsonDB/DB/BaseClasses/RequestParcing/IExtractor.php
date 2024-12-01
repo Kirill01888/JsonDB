@@ -2,7 +2,7 @@
 
 namespace JsonDB\base\Extractor;
 
-interface Extractor
+interface IExtractor
 {
     public function extract(string $toParce);
 }
